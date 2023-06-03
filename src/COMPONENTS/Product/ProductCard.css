@@ -1,0 +1,31 @@
+ .product{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow: 0 0 10px rgba(0 ,0,0,0.2);
+    border-radius:5px;
+    height:350px;
+    width:300px;
+    margin:10px;    
+
+} 
+.product .sec1 {
+    height:65%;
+    width:100%;
+}
+.product .sec1 img{
+    height:100%;
+    width:100%;
+    object-fit:contain;
+    transition:all 0.5s ease; 
+    overflow: hidden;   
+}
+.product .sec1 img:hover{
+    transform:scale(1.1);
+}   
+
+.product .addbtn svg{
+    width:30px;
+    height: 30px;
+}
