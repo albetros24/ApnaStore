@@ -9,11 +9,12 @@ function ProductCard(props) {
         <img src={product.productimg} alt="img" />
       </div>
       <div className="sec2">
-        <h4>{product.productname}</h4>
-        <h4> 
+        
+        <h3> 
           {/* discounted  price agr display krna  ho  toh isse use krna hai  */}
-          {/* {product.productprice-(product.productprice*product.discount*0.01)} */}
-           <span>{product.productprice}</span></h4>
+           ${product.productprice-(product.productprice*product.discount*0.01)} 
+           <span>{product.productprice}</span></h3>
+           <p>{product.productname}</p>
       </div>
       <div className="sec3">
         <span>{product.counttype}</span>
